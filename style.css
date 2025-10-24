@@ -29,6 +29,17 @@ body {
     margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(2,400px)auto;
+    gap: 20px;
+    grid-template-areas:
+    "header header header"
+    "card1 card2 card3"
+    "card4 card5 card6"
+    "footer footer footer"
+    ;
+    padding: 25px;
 }
 
 /* DIRECTION 2: Add grid-template-columns with 3 equal columns using repeat(3, 1fr) */
